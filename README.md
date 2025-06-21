@@ -3,12 +3,8 @@
 
 ![Python](https://img.shields.io/badge/language-Python-blue.svg)
 ![Repo Size](https://img.shields.io/github/repo-size/Sagarkadyan/Insta-automater)
-![Last Commit](https://img.shields.io/github/last-commit/Sagarkadyan/Insta-automater)
-![Issues](https://img.shields.io/github/issues/Sagarkadyan/Insta-automater)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)  
 [![Python Version](https://img.shields.io/badge/python-3.7%2B-green.svg)](https://www.python.org/)  
-[![GitHub Stars](https://img.shields.io/github/stars/Sagarkadyan/Insta-automater?style=social)]()
-
 
 ---
 
