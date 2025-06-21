@@ -10,10 +10,10 @@ import os
 from pathlib import Path
 
 # ⚠️ Replace this with your real bot token (keep this file private!)
-BOT_TOKEN = "7366166182:AAEr19QwUwtgw89NkXNSELBQg-AopvRjog0"
+BOT_TOKEN = "put your own token here"
 
 # Path to save links
-LINKS_DIR = Path("/storage/emulated/0/automater/data")
+LINKS_DIR = Path("/storage/emulated/0/automater/data") # can vary in different os
 LINKS_DIR.mkdir(parents=True, exist_ok=True)
 LINK_FILE = LINKS_DIR / "fetched_links.txt"
 
