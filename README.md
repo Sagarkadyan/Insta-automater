@@ -5,6 +5,10 @@
 ![Repo Size](https://img.shields.io/github/repo-size/Sagarkadyan/Insta-automater)
 ![Last Commit](https://img.shields.io/github/last-commit/Sagarkadyan/Insta-automater)
 ![Issues](https://img.shields.io/github/issues/Sagarkadyan/Insta-automater)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)  
+[![Python Version](https://img.shields.io/badge/python-3.7%2B-green.svg)](https://www.python.org/)  
+[![GitHub Stars](https://img.shields.io/github/stars/Sagarkadyan/Insta-automater?style=social)]()
+
 
 ---
 
@@ -13,6 +17,32 @@
 This folder contains the core automation scripts for **Insta-automater**. Use these scripts to automate Instagram activities such as posting, following, liking, and more.
 
 ---
+
+
+## 📂 Folder Structure
+
+| Folder/File       | Purpose                                                        |
+|-------------------|----------------------------------------------------------------|
+| `Archive/`        | Old or backup files and scripts                                |
+| `Downloads/`      | Holds downloaded Instagram media and related files             |
+| `SortedLinks/`    | Stores collections of processed or sorted Instagram links      |
+| `ToUpload/`       | Queued files ready for uploading to Instagram                  |
+| `data/`           | Contains data files required or produced by automation scripts |
+| `logs/`           | Stores logs from automation runs and script outputs            |
+| `scripts/`        | Main automation scripts (Python and Shell)                     |
+| `sessions/`       | Session files for authentication and persistent logins         |
+
+---
+
+## ⚙️ Key Automation Scripts (`scripts/`)
+
+- **downloader.py** — Downloads media from Instagram.
+- **uploader.py** — Uploads media to Instagram.
+- **metadata_collector.py** — Extracts metadata from Instagram content.
+- **link_fitcher.py** — Processes and manages Instagram links.
+- **converter.py** — Converts media/data to required formats.
+- **sesiongen.py** — Generates session files for automation.
+- **runner.sh** / **andriod_runner.sh** — Shell scripts to automate and schedule tasks.
 
 ## 📦 Setup Instructions
 
@@ -34,33 +64,85 @@ This folder contains the core automation scripts for **Insta-automater**. Use th
 
 ---
 
-## 🛠️ How to Use
+## ⚙️ Automation Scripts — Purpose & Usage
 
-1. **Configure Your Account**
+Navigate to the `automater/scripts/` folder before running these commands.
 
-    - Edit the configuration file (such as `config.py` or `.env`) with your Instagram credentials and preferences.
+### Python Scripts
 
-2. **Run a Script**
+- **downloader.py**  
+  _Purpose:_ Download Instagram media (photos/videos) using predefined links or credentials.  
+  _Usage:_  
+  ```bash
+  python downloader.py
+  ```
+  This will start the media download process. Make sure links or targets are configured inside the script or via input files.
 
-    - To start automating, run the main script or any specific automation script:
-      ```bash
-      python main.py
-      ```
-      Replace `main.py` with the script you wish to run (such as `auto_follow.py`, `auto_like.py`, etc.).
+- **uploader.py**  
+  _Purpose:_ Upload photos or videos to Instagram from the `ToUpload/` folder or a specified source.  
+  _Usage:_  
+  ```bash
+  python uploader.py
+  ```
+  Configure your credentials and specify upload parameters as needed in the script.
 
-3. **Check Output**
+- **metadata_collector.py**  
+  _Purpose:_ Fetch and save metadata (like captions, hashtags, user info, etc.) for Instagram content.  
+  _Usage:_  
+  ```bash
+  python metadata_collector.py
+  ```
+  Outputs metadata to a file or prints to console, depending on script settings.
 
-    - The scripts will display logs or results in your terminal window.
+- **link_fitcher.py**  
+  _Purpose:_ Extract and process Instagram post links from Telegram that you share to your bot while scrolling  .  
+  _Usage:_  
+  ```bash
+  python link_fitcher.py
+  ```
+  Processes input sources and writes sorted/filtered links to the `SortedLinks/` folder.
+
+- **converter.py**  
+  _Purpose:_ Convert media files (e.g., format, resolution) as needed for downloading/uploading.  
+  _Usage:_  
+  ```bash
+  python converter.py
+  ```
+  Configure source and output settings inside the script.
+
+- **sesiongen.py**  
+  _Purpose:_ Generate and save Instagram login session files for automated scripts.  
+  _Usage:_  
+  ```bash
+  python sesiongen.py
+  ```
+  Follow prompts or configure credentials in the script.
+
+### Shell Scripts
+
+- **runner.sh**  
+  _Purpose:_ Orchestrate and automate a sequence of Python scripts for a full workflow (download, process, upload, etc.) in Linux.  
+  _Usage:_  
+  ```bash
+  bash runner.sh
+  ```
+  You may need to make this file executable first with `chmod +x runner.sh`.
+
+- **andriod_runner.sh**  
+  _Purpose:_ Specialized runner for Android automation environments or emulators on android using Termux.  
+  _Usage:_  
+  ```bash
+  bash andriod_runner.sh
+  ```
+  Again, run `chmod +x andriod_runner.sh` if needed.
 
 ---
 
-## 📁 Folder Structure
+## 📝 Notes
 
-- `main.py` — Main entry point for automation.
-- `auto_follow.py` — Script for auto-following users.
-- `auto_like.py` — Script for auto-liking posts.
-- `requirements.txt` — List of Python dependencies.
-- `config.py` or `.env` — Configuration for credentials and settings.
+- Each script may require some configuration (such as credentials or file paths) inside the code.
+- Output and logs are generally saved in their respective folders.
+- Make sure you have all dependencies (see `requirements.txt` if present).
 
 ---
 
