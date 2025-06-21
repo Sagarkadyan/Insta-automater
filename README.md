@@ -1,88 +1,88 @@
-# Insta-automater
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/Sagarkadyan/Insta-automater/ci.yml?branch=main)](https://github.com/Sagarkadyan/Insta-automater/actions)
-[![License](https://img.shields.io/github/license/Sagarkadyan/Insta-automater)](https://github.com/Sagarkadyan/Insta-automater/blob/main/LICENSE)
-[![Last Commit](https://img.shields.io/github/last-commit/Sagarkadyan/Insta-automater)](https://github.com/Sagarkadyan/Insta-automater/commits/main)
-[![Issues](https://img.shields.io/github/issues/Sagarkadyan/Insta-automater)](https://github.com/Sagarkadyan/Insta-automater/issues)
+# Insta-automater — Automater Module
 
----
-
-## 🚀 Insta-automater
-
-**Insta-automater** is a powerful automation tool for Instagram, designed to help you automate repetitive Instagram tasks easily and efficiently. Whether you're looking to automate posting, following, liking, or more, Insta-automater has you covered!
+![Python](https://img.shields.io/badge/language-Python-blue.svg)
+![Repo Size](https://img.shields.io/github/repo-size/Sagarkadyan/Insta-automater)
+![Last Commit](https://img.shields.io/github/last-commit/Sagarkadyan/Insta-automater)
+![Issues](https://img.shields.io/github/issues/Sagarkadyan/Insta-automater)
 
 ---
 
-## ✨ Features
+## 🚀 About This Module
 
-- 📸 Automate Instagram posts and stories
-- 🤖 Bulk follow/unfollow users
-- ❤️ Like and comment on posts automatically
-- 🛡️ Safe and secure automation
-- 💡 Easy to use and customizable
+This folder contains the core automation scripts for **Insta-automater**. Use these scripts to automate Instagram activities such as posting, following, liking, and more.
 
 ---
 
-## 📦 Installation
+## 📦 Setup Instructions
 
 1. **Clone the Repository**
+
     ```bash
     git clone https://github.com/Sagarkadyan/Insta-automater.git
     cd Insta-automater/automater
     ```
 
 2. **Install Dependencies**
+
+    Make sure you have Python 3.7+ installed.  
+    Then install the required packages:
+
     ```bash
     pip install -r requirements.txt
     ```
 
 ---
 
-## 📝 Usage
+## 🛠️ How to Use
 
-1. **Configure Your Settings**
+1. **Configure Your Account**
 
-    Edit the `config.py` or `.env` file to add your Instagram credentials and preferred settings.
+    - Edit the configuration file (such as `config.py` or `.env`) with your Instagram credentials and preferences.
 
-2. **Run the Automater**
+2. **Run a Script**
 
-    ```bash
-    python main.py
-    ```
+    - To start automating, run the main script or any specific automation script:
+      ```bash
+      python main.py
+      ```
+      Replace `main.py` with the script you wish to run (such as `auto_follow.py`, `auto_like.py`, etc.).
 
-    Or use any specific automation script you want, e.g.
+3. **Check Output**
 
-    ```bash
-    python auto_follow.py
-    ```
+    - The scripts will display logs or results in your terminal window.
 
-3. **Monitor Output**
+---
 
-    The script will output logs to your console so you can watch automation in action.
+## 📁 Folder Structure
+
+- `main.py` — Main entry point for automation.
+- `auto_follow.py` — Script for auto-following users.
+- `auto_like.py` — Script for auto-liking posts.
+- `requirements.txt` — List of Python dependencies.
+- `config.py` or `.env` — Configuration for credentials and settings.
 
 ---
 
 ## ⚠️ Disclaimer
 
-- Use at your own risk. Instagram’s terms of service prohibit certain types of automation.
-- This repository is for educational purposes only.
+- Use responsibly and at your own risk.
+- Automating Instagram may violate their terms of service.
 
 ---
 
 ## 🤝 Contributing
 
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome! Please open an issue to discuss any major changes.
 
 ---
 
 ## 📄 License
 
-Distributed under the MIT License. See [`LICENSE`](../LICENSE) for more information.
+This project is licensed under the MIT License.
 
 ---
 
-## 🙋‍♂️ Support
+## 💬 Support
 
-If you have any questions or need support, open an [issue](https://github.com/Sagarkadyan/Insta-automater/issues) or contact the maintainer.
-
----
+If you have questions, open an issue on this repository.
