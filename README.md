@@ -10,7 +10,7 @@
 
 ## 🚀 About This Module
 
-This folder contains the core automation scripts for **Insta-automater**. Use these scripts to automate Instagram activities such as posting, following, liking, and more.
+This folder contains the core automation scripts for **Insta-automater**. Use these scripts to automate Instagram activitie of uploading reel, by sharing to bot while you scroll the reel.
 
 ---
 
