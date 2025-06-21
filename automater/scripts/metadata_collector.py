@@ -3,7 +3,7 @@ from pathlib import Path
 import os
 
 # --- CONFIGURATION ---
-USERNAME = "supralover291"  # <--- Set your Instagram username here
+USERNAME = "put ypur own insta id"  # <--- Set your Instagram username here
 
 SESSION_FILE = f"/storage/emulated/0/automater/sessions/{USERNAME}.session"
 LINKS_FILE = Path("/storage/emulated/0/automater/data/fetched_links.txt")
