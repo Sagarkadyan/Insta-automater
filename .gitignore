@@ -1,11 +1,17 @@
-.htaccess
-css.php
-rpc/
-sites/site*/admin/
-sites/site*/private/
-sites/site*/public/admin/
-sites/site*/public/setup/
-sites/site*/public/theme/
-textpattern/
-HISTORY.txt
-README.txt
+# Python virtual environments
+venv/
+env/
+ENV/
+.venv/
+.pipenv/
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ignore logs
+*.log  
+# Session and data files 
+# Ignore Instagram session files, fetched links, and sorted links
+/storage/emulated/0/automater/sessions/*
+/storage/emulated/0/automater/data/*
+/storage/emulated/0/automater/SortedLinks/*
