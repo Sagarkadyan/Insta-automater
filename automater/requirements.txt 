@@ -1,0 +1,7 @@
+instaloader
+shutil
+re
+python-telegram-bot==22.1
+os
+subprocess
+pathlib
